@@ -53,13 +53,17 @@
       background: #6B4426;
       color: #FFFFFF;
       border: none;
-      padding: 14px 28px;
+      padding: 0 20px;
+      min-height: 54px;
       border-radius: 50px;
       font-size: 15px;
       font-weight: 700;
       cursor: pointer;
       width: 100%;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
     }
     .btn.bw-btn { background: #472B17; color: #FFFFFF; }
     .btn:active { opacity: 0.8; }
@@ -75,16 +79,16 @@
 
   <div class="photos">
     <div class="photo-card">
-      <p class="label">🎨 Colored</p>
+      <p class="label">Colored</p>
       <!-- No crossorigin here — iOS long-press save works normally -->
       <img id="photoColor" alt="Colored photo" />
-      <button class="btn" onclick="downloadColor()">⬇️ Download Color</button>
+      <button class="btn" onclick="downloadColor()">Download Color</button>
     </div>
     <div class="photo-card">
-      <p class="label">⬛ Black & White</p>
+      <p class="label">Black &amp; White</p>
       <!-- src will be replaced with actual B&W data URL after load -->
       <img id="photoBW" alt="B&W photo" />
-      <button class="btn bw-btn" onclick="downloadBW()">⬇️ Download B&W</button>
+      <button class="btn bw-btn" onclick="downloadBW()">Download B&amp;W</button>
     </div>
   </div>
 
